@@ -12,11 +12,11 @@
   "author": "",
   "license": "ISC",
   "local": {
-    "next": "12.2.3-canary.14"
+    "next": "file:/Users/wyatt.johnson/Code/github.com/wyattjoh/next.js/packages/next"
   },
   "dependencies": {
     "clsx": "^1.2.1",
-    "next": "file:/Users/wyatt.johnson/Code/github.com/wyattjoh/next.js/packages/next",
+    "next": "12.2.3-canary.14",
     "react": "0.0.0-experimental-02206099a-20220714",
     "react-dom": "0.0.0-experimental-02206099a-20220714"
   },
