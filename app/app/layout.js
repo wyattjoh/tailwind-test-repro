@@ -1,3 +1,10 @@
+import Heading from "../../components/Heading";
+
 export default function AppLayout({ children }) {
-  return <div>{children}</div>;
+  return (
+    <div>
+      <Heading level={1} filename="/app/app/layout.js" />
+      <div>{children}</div>
+    </div>
+  );
 }

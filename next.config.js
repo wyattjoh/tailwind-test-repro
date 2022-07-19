@@ -5,7 +5,7 @@ module.exports = {
     serverComponents: true,
   },
   webpack: (config) => {
-    config.optimization.chunkIds = "named";
+    // config.optimization.chunkIds = "named";
     config.optimization.concatenateModules = false;
     config.optimization.minimize = false;
     // config.optimization.mangleExports = false;
