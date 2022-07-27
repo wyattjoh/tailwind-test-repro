@@ -1,9 +1,10 @@
 import clsx from "clsx";
+import Counter from "./Counter.client";
 
 export default function Heading({ level, filename }) {
   return (
     <div
-      className={clsx("p-2 font-mono", {
+      className={clsx("p-2 font-mono flex justify-between", {
         "bg-indigo-300": level === 0 && filename.startsWith("/app"),
         "bg-indigo-200": level === 1 && filename.startsWith("/app"),
         "bg-indigo-100": level === 2 && filename.startsWith("/app"),
@@ -12,7 +13,8 @@ export default function Heading({ level, filename }) {
         "bg-teal-100": level === 2 && filename.startsWith("/pages"),
       })}
     >
-      {filename}
+      <div>{filename}</div>
+      <Counter />
     </div>
   );
 }

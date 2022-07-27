@@ -1,15 +1,17 @@
 module.exports = {
-  productionBrowserSourceMaps: true,
   experimental: {
     appDir: true,
     serverComponents: true,
+    cpus: 10,
+    workerThreads: true,
   },
+  // productionBrowserSourceMaps: true,
   webpack: (config) => {
     // config.optimization.chunkIds = "named";
-    config.optimization.concatenateModules = false;
-    config.optimization.minimize = false;
+    // config.optimization.concatenateModules = false;
+    // config.optimization.minimize = false;
     // config.optimization.mangleExports = false;
-    config.output.pathinfo = "verbose";
+    // config.output.pathinfo = "verbose";
     return config;
   },
   redirects: () => [
